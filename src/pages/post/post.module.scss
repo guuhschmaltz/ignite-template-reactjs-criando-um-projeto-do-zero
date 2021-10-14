@@ -1,1 +1,47 @@
-// TODO
+.banner {
+  width: 100%;
+}
+
+.post {
+  margin: 1rem auto 4rem;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 3.6rem;
+    color: var(--gray-100);
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    color: var(--gray-300);
+
+    time,
+    span {
+      display: flex;
+      align-items: center;
+
+      &:not(:last-child) {
+        margin-right: 1.5rem;
+      }
+
+      :first-child {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  .postContent {
+    display: block;
+    margin-top: 2rem;
+    color: var(--gray-100);
+  }
+
+  .postBody {
+    display: block;
+    text-align: justify;
+  }
+}
